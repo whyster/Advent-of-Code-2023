@@ -1,6 +1,6 @@
 use anyhow::Result;
 
-fn process(input: &str) -> Result<i32> {
+pub fn process(input: &str) -> Result<i32> {
     todo!()
 }
 
@@ -9,10 +9,10 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_process() -> miette::Result<()> {
+    fn test_process() -> Result<()> {
         todo!("haven't built test yet");
-        let input = include_str!("../../input2.txt");
-        assert_eq!("", process(input)?);
+        let input = include_str!("../input2.txt");
+        assert_eq!(0, process(input)?);
         Ok(())
     }
 }
